@@ -6,16 +6,16 @@ import {
 } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { Analytics } from '@vercel/analytics/next';
-import { Footer } from '@/components/layouts/footer';
-import { Header } from '@/components/layouts/header';
+import { Footer } from '@/components/layouts/Footer';
+import { Header } from '@/components/layouts/Header';
+import { SITE_CONFIG } from '@/shared/common/metadata';
 import { THEME } from '@/shared/common/theme';
-import { SITE_CONFIG } from '@/shared/contents/swimming/constant';
 import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.domain),
   title: {
-    template: '%s | 수친자 테스트',
+    template: '%s | 블랭킷 포크',
     default: SITE_CONFIG.title,
   },
   description: SITE_CONFIG.description,

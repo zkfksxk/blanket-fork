@@ -94,7 +94,7 @@ export const FinalResult = ({ result }: Props) => {
               },
             },
           }}
-          onClick={() => router.push('/content/suchinja/result/list')}
+          onClick={() => router.push('/locale/content/suchinja/result/list')}
         >
           전체 결과 확인하기
         </Button>

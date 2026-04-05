@@ -1,4 +1,4 @@
 cd ../
 mkdir output
-cp -R ./suchinja/* ./output
-cp -R ./output ./suchinja/
+cp -R ./blanket-fork/* ./output
+cp -R ./output ./blanket-fork/

@@ -13,7 +13,7 @@ export default function ResultListPage() {
         {RESULT_LIST.map((result, index) => (
           <Link
             key={index}
-            href={`/content/suchinja/result?level=${result.level}`}
+            href={`/locale/content/suchinja/result?level=${result.level}`}
             className='flex gap-2 p-4 bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors'
           >
             <Image

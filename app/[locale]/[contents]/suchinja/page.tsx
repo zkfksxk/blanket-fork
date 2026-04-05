@@ -40,7 +40,7 @@ export default function SuchinjaPage() {
       const result = RESULT_LIST.find((result) => finalScore <= result.level);
       const level = result?.level || RESULT_LIST[0].level;
 
-      router.push(`/content/suchinja/result?level=${level}`);
+      router.push(`/locale/content/suchinja/result?level=${level}`);
     }
   };
 
@@ -68,7 +68,7 @@ export default function SuchinjaPage() {
   return (
     <Fragment>
       <main
-        className={`relative max-w-[500px] w-full mx-auto flex flex-1 flex-col items-center bg-[#0077F6] px-5 ${currentIndex === 0 ? ' justify-center' : ''}`}
+        className={`relative w-full flex flex-1 flex-col items-center bg-[#0077F6] ${currentIndex === 0 ? ' justify-center' : ''}`}
       >
         {currentIndex > 0 && (
           <div className='flex flex-row w-full items-center gap-4 mt-10'>

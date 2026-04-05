@@ -1,21 +1,32 @@
-import { Container } from '@mantine/core';
+import Link from 'next/link';
 import { IoMdHome } from 'react-icons/io';
 
-export const Header = () => {
+interface HeaderProps {
+  leftComponent?: React.ReactNode;
+  className?: string;
+}
+
+export const Header = ({ leftComponent, className }: HeaderProps) => {
   return (
-    <Container
-      w={{ base: '100%', sm: 500 }}
-      h='54px'
-      bg='gray.9'
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        boxSizing: 'border-box',
-        padding: '13px 16px',
-      }}
+    <header
+      className={`
+        w-full 
+        max-w-[500px] 
+        h-12
+        flex 
+        items-center 
+        ${leftComponent ? 'justify-between' : 'justify-center'}
+        mx-auto
+        bg-black
+        gap-3
+        z-50
+        ${className}
+        `}
     >
-      <IoMdHome color='white' size={28} />
-    </Container>
+      {leftComponent}
+      <Link href='/'>
+        <IoMdHome color='white' size={28} />
+      </Link>
+    </header>
   );
 };

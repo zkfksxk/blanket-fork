@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return redirect('/contents/suchinja');
+  return redirect('/locale/contents/suchinja');
 }
